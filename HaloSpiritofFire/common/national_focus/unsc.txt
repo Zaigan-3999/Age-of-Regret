@@ -1,0 +1,93 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = unsc_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = UNS
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1600 }
+#Generic Focus stuffs^
+
+
+#Startering stuff below
+	focus = {
+		id = UNS_oni_backed_carribeans
+		icon = GFX_goal_anschluss
+		available = {
+			is_puppet = no
+		}
+		cancel = {
+			OR = {
+				is_subject = yes
+			}
+		}
+		cancel_if_invalid = no
+		x = 3
+		y = 2
+		
+		cost = 10
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				date < 1938.1.1
+			}
+		}
+
+
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+
+			
+
+
+
+
+			transfer_state = 690
+			transfer_state = 693
+			transfer_state = 318
+			transfer_state = 689
+			transfer_state = 686
+			transfer_state = 308
+			transfer_state = 694
+			transfer_state = 692
+			transfer_state = 691
+			transfer_state = 696
+			transfer_state = 319
+			add_state_core = 690
+			add_state_core =693
+			add_state_core =319
+			add_state_core =318
+			add_state_core =689
+			add_state_core =686
+			add_state_core =308
+			add_state_core =694
+			add_state_core =692
+			add_state_core =691
+			add_state_core =696
+
+		}
+	}
+ focus{
+
+
+
+ }
+
+
+}
